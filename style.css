@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+   
+}
+body{
+    background-image: url(./images\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.game{
+    width: 846px;
+    height: 200px;
+    /* border-bottom: 1px solid black; */
+    margin-left: 600px;
+    margin-top: 450px;
+    transform: rotate(25deg);
+    overflow: hidden;
+
+}
+#character{
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(red, yellow);
+    position:relative;
+    top: 170px;
+    left: 80px;
+    border-radius: 50%;
+   
+   
+}
+.dd{
+    transform: rotate(1.3turn);
+    transition: transform 0.5s ;
+}
+.animate{
+    animation: jump 500ms linear;
+}
+@keyframes jump{
+    from {top: 150px;}
+    to {top: 100px;}
+    from {top: 100px;}
+    to {top: 150px;}
+}
+
+#block{
+    background-color: rgb(12, 12, 13);
+    width: 50px;
+    height: 70px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+from {left: 700px}
+    to {left: -10px}
+}
+p{
+    position:absolute;
+    text-align: center;
+    font-size: 300px;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 255, 0);
+    top: 20px;
+}
